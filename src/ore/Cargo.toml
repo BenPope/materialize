@@ -7,7 +7,7 @@ edition = "2018"
 publish = false
 
 [dependencies]
-async-trait = "0.1.50"
+async-trait = "0.1.51"
 bytes = "1.0.1"
 either = "1.5.1"
 fallible-iterator = "0.2.0"
