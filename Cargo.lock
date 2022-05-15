@@ -2004,7 +2004,7 @@ dependencies = [
  "indexmap",
  "slab",
  "tokio",
- "tokio-util",
+ "tokio-util 0.6.10",
  "tracing",
 ]
 
@@ -2876,7 +2876,7 @@ dependencies = [
  "thiserror",
  "tokio",
  "tokio-native-tls",
- "tokio-util",
+ "tokio-util 0.6.10",
  "twox-hash",
  "url",
  "uuid",
@@ -3138,7 +3138,7 @@ dependencies = [
  "tokio",
  "tokio-postgres",
  "tokio-serde",
- "tokio-util",
+ "tokio-util 0.7.2",
  "tracing",
  "url",
  "uuid",
@@ -3196,7 +3196,7 @@ dependencies = [
  "tokio",
  "tokio-serde",
  "tokio-stream",
- "tokio-util",
+ "tokio-util 0.7.2",
  "tracing",
  "url",
  "uuid",
@@ -3216,7 +3216,7 @@ dependencies = [
  "timely",
  "tokio",
  "tokio-serde",
- "tokio-util",
+ "tokio-util 0.7.2",
  "tracing",
  "tracing-subscriber",
 ]
@@ -3641,7 +3641,7 @@ dependencies = [
  "tokio",
  "tokio-openssl",
  "tokio-stream",
- "tokio-util",
+ "tokio-util 0.7.2",
  "tracing",
 ]
 
@@ -3946,7 +3946,7 @@ dependencies = [
  "tokio",
  "tokio-postgres",
  "tokio-stream",
- "tokio-util",
+ "tokio-util 0.7.2",
  "tracing-subscriber",
  "url",
  "uuid",
@@ -5992,7 +5992,7 @@ dependencies = [
  "postgres-types",
  "socket2",
  "tokio",
- "tokio-util",
+ "tokio-util 0.6.10",
 ]
 
 [[package]]
@@ -6023,17 +6023,31 @@ dependencies = [
 
 [[package]]
 name = "tokio-util"
-version = "0.6.9"
+version = "0.6.10"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "9e99e1983e5d376cd8eb4b66604d2e99e79f5bd988c3055891dcd8c9e2604cc0"
+checksum = "36943ee01a6d67977dd3f84a5a1d2efeb4ada3a1ae771cadfaa535d9d9fc6507"
+dependencies = [
+ "bytes",
+ "futures-core",
+ "futures-sink",
+ "log",
+ "pin-project-lite",
+ "tokio",
+]
+
+[[package]]
+name = "tokio-util"
+version = "0.7.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "f988a1a1adc2fb21f9c12aa96441da33a1728193ae0b95d2be22dbd17fcb4e5c"
 dependencies = [
  "bytes",
  "futures-core",
  "futures-io",
  "futures-sink",
- "log",
  "pin-project-lite",
  "tokio",
+ "tracing",
 ]
 
 [[package]]
@@ -6068,7 +6082,7 @@ dependencies = [
  "prost-derive",
  "tokio",
  "tokio-stream",
- "tokio-util",
+ "tokio-util 0.6.10",
  "tower",
  "tower-layer",
  "tower-service",
@@ -6103,7 +6117,7 @@ dependencies = [
  "slab",
  "tokio",
  "tokio-stream",
- "tokio-util",
+ "tokio-util 0.6.10",
  "tower-layer",
  "tower-service",
  "tracing",
